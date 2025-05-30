@@ -93,25 +93,12 @@
   </div>
 
   <script type="module">
-    import Chatbox from 'https://cdn.jsdelivr.net/npm/@chatvolt/embeds@latest/dist/chatbox/index.js';
+  import Chatbox from 'https://cdn.jsdelivr.net/npm/@chatvolt/embeds@latest/dist/chatbox/index.js';
 
-    const widget = await Chatbox.initBubble({
-      agentId: 'cmb5imejh07mxd59xb31flmg3',
-      contact: {
-        firstName: 'João',
-        lastName: 'Macedo',
-        email: 'cliente@email.com',
-        phoneNumber: '+557199999999',
-      },
-      interface: {
-        initialMessages: [
-          'Olá! Como posso ajudar você com sua dúvida jurídica hoje?',
-        ],
-      },
-      context: "O usuário está buscando triagem jurídica para uma situação de consumo, vive em Salvador e deseja entender seus direitos.",
-    });
+  const widget = await Chatbox.initBubble({
+    agentId: 'cmb5imejh07mxd59xb31flmg3',
+  });
 
-    widget.open();
-  </script>
+</script>
 </body>
 </html>
